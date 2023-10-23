@@ -1,4 +1,9 @@
-import operations as op
+import add as a
+import subtract as s
+import multiplication as u
+import division as d
+import power as p
+import module as m
 def game():
   score = 0
   while True:
@@ -20,42 +25,42 @@ def game():
     answer = int(input('Enter you answer: '))
   
     if option == 1:
-      result =op.add(num_1, num_2)
+      result =a.add(num_1, num_2)
       if result == answer:
         score += 1
         print('Correct!!')
       else:
         print('Incorrect')
     elif option==2:
-      result=op.subtract(num_1, num_2)
+      result=s.subtract(num_1, num_2)
       if result== answer:
         score+=1
         print("  Correct!!")
       else:
         print("Incorrect")
     elif option==3:
-      result=op.multiplication(num_1, num_2)
+      result=u.multiplication(num_1, num_2)
       if result== answer:
         score+=2
         print("  Correct!!")
       else:
         print("Incorrect")
     elif option==4:
-      result=op.division(num_1, num_2)
+      result=d.division(num_1, num_2)
       if result== answer:
         score+=2
         print("  Correct!!")
       else:
         print("Incorrect")
     elif option==5:
-      result=op.power(num_1, num_2)
+      result=p.power(num_1, num_2)
       if result== answer:
         score+=4
         print("  Correct!!")
       else:
         print("Incorrect")
     elif option==6:
-      result=op.module(num_1, num_2)
+      result=m.module(num_1, num_2)
       if result== answer:
         score+=4
         print("  Correct!!")
